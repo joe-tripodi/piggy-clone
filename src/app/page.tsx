@@ -37,6 +37,9 @@ export default function Home() {
           <img src="fallback.jpg" alt="description" />
         </picture>
       </div>
+      <div>
+        <p>Join the 10.000+ companies growing loyalty globally</p>
+      </div>
 
     </div>
   );
