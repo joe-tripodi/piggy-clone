@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
+import "./reset.css";
 import "./globals.css";
 import DesktopHeader from "./components/desktop-header";
 
@@ -29,8 +30,10 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <DesktopHeader />
-        {children}
+        <div className="pt-10">
+          <DesktopHeader />
+          {children}
+        </div>
       </body>
     </html>
   );

@@ -24,17 +24,17 @@ export default function DesktopHeader() {
           {["Solution", "Platform", "Resources", "Pricing", "Company"].map((item) => {
             return (
               <div className="flex items-center align-middle py-1 px-4 rounded-full cursor-pointer hover:bg-[#f6f7fe]" onClick={() => handleDropdownClick(item)}>
-                <label className={`${activeDropdown === item ? 'text-primary' : 'text-gray-500'} select-none cursor-pointer`}>{item}</label>
-                <div className={`w-2.5 h-2.5 ml-2 transition-all ease-out-in duration-200 ${activeDropdown === item ? 'rotate-180 bg-primary' : 'bg-gray-500'} cursor-pointer`} style={{ mask: "url('/static/icons/dropdown-icon.svg') center center no-repeat" }}></div>
+                <label className={`${activeDropdown === item ? 'text-primary-500' : 'text-gray-500'} select-none cursor-pointer`}>{item}</label>
+                <div className={`w-2.5 h-2.5 ml-2 transition-all ease-out-in duration-200 ${activeDropdown === item ? 'rotate-180 bg-primary-500' : 'bg-gray-500'} cursor-pointer`} style={{ mask: "url('/static/icons/dropdown-icon.svg') center center no-repeat" }}></div>
               </div>
             )
           })
           }
         </div>
       </div>
-      <div>
-        <button className="rounded-s p-2">Book a demo</button>
-        <button className="rounded-s p-2">Try for free</button>
+      <div className="flex flex-row items-center justify-end gap-x-3">
+        <button className="bg-secondary text-primary rounded-xl py-2 px-3">Book a demo</button>
+        <button className="bg-primary text-white rounded-xl py-2 px-3">Try for free</button>
       </div>
     </header >
   )
