@@ -70,6 +70,5 @@ body {
 }
 
 .bottom-shadow {
-  border: 0 solid #d9d9e9;
   filter: drop-shadow(0px 1px 1px #d9d9e9);
 }
