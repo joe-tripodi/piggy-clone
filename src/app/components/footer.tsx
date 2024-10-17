@@ -12,7 +12,7 @@ export default function Footer() {
           ["Legal", "Privacy", "Cookies", "Legal Notice"].map((item) => {
             return (
               <Link
-                className="hover:underline hover:highlight"
+                className="transition-all ease-out-in duration-100 hover:underline hover:highlight"
                 href="#"
                 target="_blank"
                 rel="noopener noreferrer"
