@@ -5,12 +5,14 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --link-highlight: #3430ff;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
+    --link-highlight: #3430ff;
   }
 }
 
@@ -23,5 +25,9 @@ body {
 @layer utilities {
   .text-balance {
     text-wrap: balance;
+  }
+
+  .highlight {
+    color: var(--link-highlight);
   }
 }
