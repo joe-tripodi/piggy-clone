@@ -4,7 +4,7 @@ export default function Home() {
       className="justify-center place-items-center text-center mx-auto lg:w-4/8 xl:w-3/4 z-10"
     >
       <div
-        className="justify-center place-items-center text-center mx-auto lg:w-4/8 xl:w-3/4 z-10"
+        className="justify-center place-items-center text-center mx-auto lg:w-4/8 xl:w-3/4 z-10 pt-10"
       >
         <h2
           className="text-4xl lg:text-5xl tracking-tight mb-4 lg:mb-6 text-gray-900 font-bold overflow-ellipsis"
@@ -27,6 +27,17 @@ export default function Home() {
         <button className="bg-secondary text-primary rounded-xl py-3.5 px-5">Book a demo</button>
         <button className="bg-primary text-white rounded-xl py-3.5 px-5">Try for free</button>
       </div>
+      <div className="w-6/6 mx-auto my-auto pt-10 pb-10">
+        <picture>
+          <source
+            srcSet="https://www.datocms-assets.com/54615/1674116454-frame-3967.jpg?dpr=0.25&fm=webp 1216w, https://www.datocms-assets.com/54615/1674116454-frame-3967.jpg?dpr=0.5&fm=webp 2432w, https://www.datocms-assets.com/54615/1674116454-frame-3967.jpg?dpr=0.75&fm=webp 3648w, https://www.datocms-assets.com/54615/1674116454-frame-3967.jpg?fm=webp 4864w"
+            sizes="(max-width: 4864px) 100vw, 4864px"
+            type="image/webp"
+          />
+          <img src="fallback.jpg" alt="description" />
+        </picture>
+      </div>
+
     </div>
   );
 }
