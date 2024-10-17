@@ -1,3 +1,5 @@
+import Link from "next/link"
+
 export default function Footer() {
   return (
     <div className="min-h-screen font-[family-name:var(--font-geist-sans)]">
@@ -6,38 +8,20 @@ export default function Footer() {
         </div>
       </main>
       <footer className="row-start-3 flex gap-12 flex-wrap items-center justify-center">
-        <a
-          className="hover:underline hover:highlight"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Legal
-        </a>
-        <a
-          className="hover:underline hover:highlight"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Privacy
-        </a>
-        <a
-          className="hover:underline hover:highlight"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Cookies
-        </a>
-        <a
-          className="hover:underline hover:highlight"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Legal Notice
-        </a>
+        {
+          ["Legal", "Privacy", "Cookies", "Legal Notice"].map((item) => {
+            return (
+              <Link
+                className="hover:underline hover:highlight"
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {item}
+              </Link>
+            )
+          })
+        }
       </footer>
     </div>
   );
